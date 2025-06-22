@@ -1,6 +1,6 @@
 import fs from "fs";
 import { parse } from "csv-parse";
-import { CsvIssueInput } from "types";
+import { CsvIssueInput } from "types/csv";
 
 export async function parseCSV(filePath: string): Promise<CsvIssueInput[]> {
   return new Promise((resolve, reject) => {

@@ -12,7 +12,7 @@ import {
 } from "lib/utils/logger";
 import { issueAlreadyExists } from "lib/resolvers/issue.resolver";
 import { readSeedLog, writeToSeedLog } from "lib/utils/seed-tracker";
-import { CsvIssueInput } from "types";
+import { CsvIssueInput } from "types/csv";
 
 export async function seedIssuesFromCSV(csvPath: string) {
   const issues = await parseCSV(csvPath);

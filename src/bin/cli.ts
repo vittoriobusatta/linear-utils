@@ -1,3 +1,5 @@
+#!/usr/bin/env tsx
+
 import "dotenv/config";
 import { context } from "context";
 import { seedIssuesFromCSV } from "lib/linear/seeders/issue.seed";

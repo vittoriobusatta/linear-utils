@@ -1,5 +1,5 @@
 import { parseCSV } from "lib/csv/parser";
-import type { CsvIssueInput } from "types";
+import type { CsvIssueInput } from "types/csv";
 import { client } from "lib/linear/client";
 import { getProject } from "lib/linear/services/project.service";
 import { context } from "context";

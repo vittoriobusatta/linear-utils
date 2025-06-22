@@ -3,7 +3,7 @@ import { getTeam } from "lib/linear/services/team.service";
 import { getProject } from "lib/linear/services/project.service";
 import { resolveLabelIds } from "lib/resolvers/label.resolver";
 import { resolveMilestoneId } from "lib/resolvers/milestone.resolver";
-import { CsvIssueInput } from "types";
+import { CsvIssueInput } from "types/csv";
 
 export async function mapToLinearInput(
   csv: CsvIssueInput

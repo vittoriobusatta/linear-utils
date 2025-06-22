@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx ./src/cli.ts",
+    "dev": "tsx ./src/bin/cli.ts",
     "build": "tsc",
     "test": "vitest --config vitest.config.ts"
+  },
+  "bin": {
+    "linear-utils": "./src/bin/cli.ts"
   },
   "keywords": [],
   "author": "",
