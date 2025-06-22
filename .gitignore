@@ -4,5 +4,5 @@ build/
 .env
 *.log
 *.tsbuildinfo
-issues.csv
+seeds/*
 seed-logs/*
