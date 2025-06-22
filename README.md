@@ -37,25 +37,6 @@ Required columns: `title`, `teamKey`, `projectName`
 
 Optional: `description`, `projectMilestone`, `labelNames`
 
-Use `;` to separate multiple labels in `labelNames`
-
-## Project Structure
-
-```
-src/
-  bin/
-    cli.ts
-  lib/
-    linear/
-      services/
-      seeders/
-    utils/
-  issues.csv
-examples/
-  issues.example.csv
-seed-logs/
-```
-
 ## Run Tests
 
 ```bash
