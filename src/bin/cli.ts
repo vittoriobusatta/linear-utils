@@ -8,8 +8,16 @@ import { seedMilestonesFromCSV } from "lib/linear/seeders/milestone.seed";
 async function main() {
   context.dryRun = process.argv.includes("--dry");
 
-  await seedMilestonesFromCSV("./src/issues.csv");
-  await seedIssuesFromCSV("./src/issues.csv");
+  const csvArg = process.argv.find((arg) => arg.startsWith("--csv="));
+  const csvPath = csvArg?.split("=")[1] || process.env.CSV_PATH;
+
+  if (!csvPath) {
+    console.error("❌ CSV path not provided");
+    process.exit(1);
+  }
+
+  await seedMilestonesFromCSV(csvPath);
+  await seedIssuesFromCSV(csvPath);
 }
 
 main().catch((err) => {

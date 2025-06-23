@@ -6,12 +6,12 @@ export async function createIssue(input: IssueCreateInput) {
   const result = await client.createIssue(input);
   const issue = await result.issue;
 
-  if (issue && input.projectMilestoneId) {
-    await client.updateIssue(issue.id, {
-      projectMilestoneId: input.projectMilestoneId,
-    });
-    console.info(`📌 Assigned milestone to "${issue.title}"`);
-  }
+  // if (issue && input.projectMilestoneId) {
+  //   await client.updateIssue(issue.id, {
+  //     projectMilestoneId: input.projectMilestoneId,
+  //   });
+  //   console.info(`📌 Assigned milestone to "${issue.title}"`);
+  // }
 
   if (!context.dryRun) {
     console.info(

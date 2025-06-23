@@ -30,5 +30,6 @@ export async function mapToLinearInput(
     projectId: project.id,
     labelIds,
     projectMilestoneId: milestoneId,
+    priority: Number(csv.priority),
   };
 }

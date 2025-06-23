@@ -5,4 +5,5 @@ export interface CsvIssueInput {
   labelNames: string;
   projectName: string;
   projectMilestone: string;
+  priority: string;
 }

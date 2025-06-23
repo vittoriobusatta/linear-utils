@@ -1,5 +1,5 @@
-title,description,teamKey,projectName,projectMilestone,labelNames
-"Setup project structure","Initialize monorepo, TS config, and base folders",ENG,My Project,Setup,"infrastructure,workflow"
-"Add authentication system","Login, register, forgot password",ENG,My Project,Auth,"backend"
-"Design landing page","Figma design for homepage",DESIGN,My Project,UI,"ui design,branding"
-"Create booking API","Slot creation and booking logic",ENG,My Project,Booking,"backend,tests"
+title,description,teamKey,projectName,projectMilestone,labelNames,priority
+"Setup project structure","Initialize monorepo, TS config, and base folders",ENG,My Project,Setup,infrastructure,1
+"Add authentication system","Login, register, forgot password",ENG,My Project,Auth,backend,2
+"Design landing page","Figma design for homepage",DESIGN,My Project,UI,ui design,3
+"Create booking API","Slot creation and booking logic",ENG,My Project,Booking,backend,4
